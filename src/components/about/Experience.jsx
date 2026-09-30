@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const ENTRIES = [
   { company: "SIA AMBEX", href: "https://ambex.lv", period: "2025. gada novembris - šobrīd" },
-  { company: "Kēfa", role: "Prakses vieta - web izstrāde", period: "2021" },
+  { company: "Kēfa", href: "http://www.kefa.lv/home", role: "Prakses vieta - web izstrāde", period: "2021" },
 ];
 
 const ROW_HEIGHT = 64;
