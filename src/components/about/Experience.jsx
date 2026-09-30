@@ -27,7 +27,7 @@ export function Experience() {
         <motion.div
           className="relative"
           initial={false}
-          animate={{ height: open ? "auto" : collapsedHeight }}
+          animate={{ height: open || hiddenCount === 0 ? "auto" : collapsedHeight }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           style={{ overflow: "hidden" }}
         >
