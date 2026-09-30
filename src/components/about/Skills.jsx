@@ -1,10 +1,11 @@
 const SKILLS = [
   "Pašmotivācija",
   "Radošs dizains",
-  "Labas izpētes prasmes",
   "Kritiskā domāšana",
+  "Praktiska problēmu risināšana",
   "Kļūdu labošana un atkļūdošana",
-  "Emocionālā inteliģence",
+  "Uzmanība pret detaļām",
+  "Patstāvīga mācīšanās",
 ];
 
 export function Skills() {
