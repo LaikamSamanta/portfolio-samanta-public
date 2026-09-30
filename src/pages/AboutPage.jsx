@@ -22,16 +22,20 @@ export default function AboutPage() {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                Esmu jauna un mērķtiecīga{" "}
-                <strong className="font-semibold text-foreground">web izstrādātāja</strong> ar prasmēm{" "}
-                <strong className="font-semibold text-foreground">HTML</strong>,{" "}
-                <strong className="font-semibold text-foreground">CSS</strong>,{" "}
-                <strong className="font-semibold text-foreground">PHP</strong>,{" "}
-                <strong className="font-semibold text-foreground">JavaScript</strong> un{" "}
-                <strong className="font-semibold text-foreground">React</strong> ietvaros. Esmu ļoti atvērta jaunām idejām un mācīšanās iespējām.
+                Mana galvenā pieredze ir saistīta ar{" "}
+                <strong className="font-semibold text-foreground">WordPress</strong> izstrādi, kur ikdienā strādāju ar mājaslapu izveidi, pielāgošanu un funkcionālu risinājumu izstrādi. Strādāju arī ar{" "}
+                <strong className="font-semibold text-foreground">WooCommerce</strong>, veidojot un pielāgojot e-komercijas funkcionalitāti atbilstoši projekta vajadzībām.
               </p>
               <p>
-                Dzīvoju Mālpilī, Latvijā. Mani var sasniegt pa e-pastu - kontakti apakšā.
+                Izstrādē izmantoju{" "}
+                <strong className="font-semibold text-foreground">PHP</strong>,{" "}
+                <strong className="font-semibold text-foreground">JavaScript</strong>,{" "}
+                <strong className="font-semibold text-foreground">HTML</strong> un{" "}
+                <strong className="font-semibold text-foreground">CSS</strong>, kā arī strādāju ar dažādām WordPress integrācijām un custom risinājumiem. Man svarīgi ir ne tikai tas, kā mājaslapa izskatās, bet arī tas, lai tās funkcionalitāte būtu pārdomāta un uzticama.
+              </p>
+              <p>
+                Ārpus ikdienas WordPress projektiem turpinu paplašināt savas zināšanas un eksperimentēju ar citām web tehnoloģijām, tostarp{" "}
+                <strong className="font-semibold text-foreground">React</strong>, veidojot savus projektus.
               </p>
             </div>
           </div>
