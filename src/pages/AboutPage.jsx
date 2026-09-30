@@ -17,10 +17,8 @@ export default function AboutPage() {
       <section className="mx-auto w-full max-w-3xl px-6 pt-20 pb-16 sm:px-10 sm:pt-28 sm:pb-24">
         <FadeIn delay={0.5}>
           <div className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3">
-            <h1 className="font-serif text-[1.75rem] font-medium tracking-tight text-foreground sm:text-[2rem]">
-              Sveiki! Es esmu <span className="border-b border-foreground/30 pb-0.5">Samanta Biezēka</span>.
-            </h1>
-            <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
+            <h1 className="sr-only">Par mani</h1>
+            <div className="space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
                 Mana galvenā pieredze ir saistīta ar{" "}
                 <strong className="font-semibold text-foreground">WordPress</strong> izstrādi, kur ikdienā strādāju ar mājaslapu izveidi, pielāgošanu un funkcionālu risinājumu izstrādi. Strādāju arī ar{" "}
