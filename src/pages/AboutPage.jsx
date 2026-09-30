@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <strong className="font-semibold text-foreground">React</strong> ietvaros. Esmu ļoti atvērta jaunām idejām un mācīšanās iespējām.
               </p>
               <p>
-                Dzīvoju Mālpilī, Latvijā. Mani var sasniegt pa e-pastu — kontakti apakšā.
+                Dzīvoju Mālpilī, Latvijā. Mani var sasniegt pa e-pastu - kontakti apakšā.
               </p>
             </div>
           </div>

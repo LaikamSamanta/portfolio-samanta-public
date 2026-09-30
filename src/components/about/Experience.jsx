@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const ENTRIES = [
-  { company: "Kēfa", role: "Prakses vieta — web izstrāde", period: "2021" },
+  { company: "Kēfa", role: "Prakses vieta - web izstrāde", period: "2021" },
 ];
 
 const ROW_HEIGHT = 64;

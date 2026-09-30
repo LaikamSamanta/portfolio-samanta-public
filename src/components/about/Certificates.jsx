@@ -3,7 +3,7 @@ import { Award, ExternalLink } from "lucide-react";
 const ENTRIES = [
   {
     title: "UX/UI & Figma",
-    issuer: "Iepazīsti tehnoloģijas — tiešsaistes darbnīca",
+    issuer: "Iepazīsti tehnoloģijas - tiešsaistes darbnīca",
     issued: "2026-09-25",
     file: "/certificates/ux-ui-figma-2026.pdf",
   },

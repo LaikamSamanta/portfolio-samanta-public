@@ -2,14 +2,14 @@ import { ArrowRight, FolderKanban, Sparkles, Compass } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FadeIn } from "../ui/motion-primitives";
 
-// Placeholder projects — replace with real work, descriptions, and screenshots.
+// Placeholder projects - replace with real work, descriptions, and screenshots.
 const PROJECTS = [
   {
     id: "projekts-1",
     icon: Sparkles,
     iconLabel: "Projekts Nr. 1",
     title: "Projekta nosaukums parādīsies šeit",
-    description: "Īss apraksts par šo projektu — ko tas dara un kā tas tapa.",
+    description: "Īss apraksts par šo projektu - ko tas dara un kā tas tapa.",
     meta: "React, Tailwind CSS",
     imageRatio: 4 / 3,
   },
@@ -18,7 +18,7 @@ const PROJECTS = [
     icon: Compass,
     iconLabel: "Projekts Nr. 2",
     title: "Projekta nosaukums parādīsies šeit",
-    description: "Īss apraksts par šo projektu — ko tas dara un kā tas tapa.",
+    description: "Īss apraksts par šo projektu - ko tas dara un kā tas tapa.",
     meta: "WordPress, PHP",
     imageRatio: 4 / 3,
   },
@@ -27,7 +27,7 @@ const PROJECTS = [
     icon: FolderKanban,
     iconLabel: "Projekts Nr. 3",
     title: "Projekta nosaukums parādīsies šeit",
-    description: "Īss apraksts par šo projektu — ko tas dara un kā tas tapa.",
+    description: "Īss apraksts par šo projektu - ko tas dara un kā tas tapa.",
     meta: "React, JavaScript",
     imageRatio: 4 / 3,
   },
@@ -45,7 +45,7 @@ export function Projects({ withHeadline = false, viewMoreVisible = false }) {
               Mani projekti
             </h2>
             <p className="max-w-[33ch] text-[18px] leading-[1.45] tracking-tight text-foreground/65 sm:text-[20px]">
-              Šī sadaļa vēl tiek papildināta — pavisam drīz šeit būs pirmie darbi.
+              Šī sadaļa vēl tiek papildināta - pavisam drīz šeit būs pirmie darbi.
             </p>
           </FadeIn>
         ) : null}

@@ -42,7 +42,7 @@ export function useTheme() {
 
       // Mutate the class synchronously inside the transition callback so the
       // "before"/"after" screenshots the View Transitions API captures are
-      // correct — a React state update here would be too late (async/batched).
+      // correct - a React state update here would be too late (async/batched).
       const transition = document.startViewTransition(() => {
         root.classList.toggle("dark", next === "dark");
       });
