@@ -8,6 +8,7 @@ const CHIPS = [
   { label: "React", slug: "react", bg: "#1fb6cb", fg: "#ffffff" },
   { label: "Node.js", slug: "nodedotjs", bg: "#3c873a", fg: "#ffffff" },
   { label: "PHP", slug: "php", bg: "#777bb4", fg: "#ffffff" },
+  { label: "WordPress", slug: "wordpress", bg: "#21759b", fg: "#ffffff" },
   { label: "MySQL", slug: "mysql", bg: "#00758f", fg: "#ffffff" },
   { label: "Git", slug: "git", bg: "#f05032", fg: "#ffffff" },
   { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
