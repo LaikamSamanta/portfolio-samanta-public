@@ -21,8 +21,8 @@ export function Hero() {
               Junior web izstrādātāja
             </h1>
 
-            <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Mērķtiecīga web izstrādātāja ar prasmēm HTML, CSS, PHP, JavaScript un React. Vienmēr atvērta jaunām idejām un mācīšanās iespējām.
+            <p className="max-w-[38ch] text-[20px] leading-[1.45] tracking-tight text-foreground/65 sm:text-[22px]">
+              Veidoju modernas un funkcionālas WordPress mājaslapas un e-komercijas risinājumus, pielāgojot tos konkrētām biznesa vajadzībām ar PHP, JavaScript un WooCommerce.
             </p>
 
             <HeroCtas />
