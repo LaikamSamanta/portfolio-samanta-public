@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const ENTRIES = [
-  { company: "Kēfa", role: "Prakses vieta — web izstrāde", period: "2021", brand: "#aa3bff" },
+  { company: "Kēfa", role: "Prakses vieta — web izstrāde", period: "2021" },
 ];
 
 const ROW_HEIGHT = 64;
@@ -37,7 +37,7 @@ export function Experience() {
                 className="bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2"
                 style={{ minHeight: ROW_HEIGHT }}
               >
-                <CompanyLogo entry={entry} />
+                <CompanyLogo />
                 <div className="flex min-w-0 flex-col">
                   <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.company}</span>
                   <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
@@ -92,14 +92,14 @@ export function Experience() {
   );
 }
 
-function CompanyLogo({ entry }) {
+function CompanyLogo() {
   return (
     <span
-      className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center ring-1 dark:ring-white/10"
+      className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center border"
       aria-hidden="true"
-      style={{ borderRadius: 14, backgroundColor: entry.brand }}
+      style={{ borderRadius: 14 }}
     >
-      <Briefcase className="h-6 w-6 text-white" />
+      <Briefcase className="text-foreground/60 h-6 w-6" />
     </span>
   );
 }
