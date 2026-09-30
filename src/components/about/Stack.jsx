@@ -151,7 +151,7 @@ export function Stack() {
         <h3 className="text-foreground text-[15px] font-semibold tracking-tight">Steks</h3>
       </div>
 
-      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative h-40 overflow-hidden rounded-4xl border sm:h-64">
+      <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative h-56 overflow-hidden rounded-4xl border sm:h-96">
         <button
           type="button"
           onClick={() => setResetKey((k) => k + 1)}
