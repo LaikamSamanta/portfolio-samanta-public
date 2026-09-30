@@ -2,7 +2,7 @@ import { GraduationCap } from "lucide-react";
 
 const ENTRIES = [
   { school: "Rīgas 3. arodskola", href: "https://www.rmpv.lv/", degree: "Programmēšanas tehniķis, 4. profesionālās kvalifikācijas līmenis", period: "2019 - 2021" },
-  { school: "Līgatnes vidusskola", degree: "Vidējā izglītība", period: "2008 - 2019" },
+  { school: "Līgatnes vidusskola", href: "https://jlv.lv/", degree: "Vidējā izglītība", period: "2008 - 2019" },
 ];
 
 const ROW_HEIGHT = 64;
