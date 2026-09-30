@@ -5,6 +5,8 @@ const CHIPS = [
   { label: "HTML", slug: "html5", bg: "#e34f26", fg: "#ffffff" },
   { label: "CSS", slug: "css", bg: "#1572b6", fg: "#ffffff" },
   { label: "JavaScript", slug: "javascript", bg: "#f7df1e", fg: "#111111" },
+  { label: "Tailwind CSS", slug: "tailwindcss", bg: "#0891b2", fg: "#ffffff" },
+  { label: "Bootstrap", slug: "bootstrap", bg: "#7952b3", fg: "#ffffff" },
   { label: "React", slug: "react", bg: "#1fb6cb", fg: "#ffffff" },
   { label: "PHP", slug: "php", bg: "#777bb4", fg: "#ffffff" },
   { label: "Laravel", slug: "laravel", bg: "#ff2d20", fg: "#ffffff" },
