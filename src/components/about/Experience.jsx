@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const ENTRIES = [
-  { company: "SIA AMBEX", period: "2025. gada novembris - šobrīd" },
+  { company: "SIA AMBEX", href: "https://ambex.lv", period: "2025. gada novembris - šobrīd" },
   { company: "Kēfa", role: "Prakses vieta - web izstrāde", period: "2021" },
 ];
 
@@ -32,27 +32,45 @@ export function Experience() {
           style={{ overflow: "hidden" }}
         >
           <ul className="flex flex-col gap-2">
-            {ENTRIES.map((entry) => (
-              <li
-                key={`${entry.company}-${entry.period}`}
-                className="bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2"
-                style={{ minHeight: ROW_HEIGHT }}
-              >
-                <CompanyLogo />
-                <div className="flex min-w-0 flex-col">
-                  <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.company}</span>
-                  <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
-                    {entry.role && (
-                      <>
-                        {entry.role}
-                        <span className="text-foreground/30 mx-2">•</span>
-                      </>
-                    )}
-                    <span className="text-foreground/55">{entry.period}</span>
-                  </span>
-                </div>
-              </li>
-            ))}
+            {ENTRIES.map((entry) => {
+              const rowClass = "bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2";
+              const content = (
+                <>
+                  <CompanyLogo />
+                  <div className="flex min-w-0 flex-col">
+                    <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.company}</span>
+                    <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
+                      {entry.role && (
+                        <>
+                          {entry.role}
+                          <span className="text-foreground/30 mx-2">•</span>
+                        </>
+                      )}
+                      <span className="text-foreground/55">{entry.period}</span>
+                    </span>
+                  </div>
+                </>
+              );
+              return (
+                <li key={`${entry.company}-${entry.period}`}>
+                  {entry.href ? (
+                    <a
+                      href={entry.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${rowClass} hover:border-foreground/20 transition-colors`}
+                      style={{ minHeight: ROW_HEIGHT }}
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <div className={rowClass} style={{ minHeight: ROW_HEIGHT }}>
+                      {content}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </motion.div>
 
