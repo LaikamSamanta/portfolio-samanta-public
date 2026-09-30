@@ -14,7 +14,7 @@ export default function AboutPage() {
         <PolaroidStrip />
       </section>
 
-      <section className="mx-auto w-full max-w-160 px-6 pt-20 pb-16 sm:px-10 sm:pt-28 sm:pb-24">
+      <section className="mx-auto w-full max-w-3xl px-6 pt-20 pb-16 sm:px-10 sm:pt-28 sm:pb-24">
         <FadeIn delay={0.5}>
           <div className="rounded-4xl border border-foreground/5 bg-foreground/1.5 p-8 sm:p-12 dark:bg-foreground/3">
             <h1 className="font-serif text-[1.75rem] font-medium tracking-tight text-foreground sm:text-[2rem]">
@@ -38,14 +38,16 @@ export default function AboutPage() {
         </FadeIn>
       </section>
 
-      <section className="mx-auto w-full max-w-[40rem] px-6 pb-20 sm:px-10 sm:pb-28">
+      <section className="mx-auto w-full max-w-5xl px-6 pb-20 sm:px-10 sm:pb-28">
         <FadeIn delay={0.1}>
-          <div className="flex flex-col gap-10">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             <Experience />
             <Education />
             <Certificates />
             <Skills />
-            <Stack />
+            <div className="lg:col-span-2">
+              <Stack />
+            </div>
           </div>
         </FadeIn>
       </section>
