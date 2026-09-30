@@ -1,3 +1,5 @@
+import { GraduationCap } from "lucide-react";
+
 const ENTRIES = [
   { school: "Rīgas 3. arodskola", degree: "Programmēšanas tehniķis, 4. profesionālās kvalifikācijas līmenis", period: "2019 – 2021" },
   { school: "Līgatnes vidusskola", degree: "Vidējā izglītība", period: "2008 – 2019" },
@@ -17,7 +19,7 @@ export function Education() {
               className="bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2"
               style={{ minHeight: ROW_HEIGHT }}
             >
-              <SchoolLogo entry={entry} />
+              <SchoolLogo />
               <div className="flex min-w-0 flex-col">
                 <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.school}</span>
                 <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
@@ -34,15 +36,14 @@ export function Education() {
   );
 }
 
-function SchoolLogo({ entry }) {
-  const initials = entry.school.charAt(0);
+function SchoolLogo() {
   return (
     <span
       className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center border"
       aria-hidden="true"
       style={{ borderRadius: 14 }}
     >
-      <span className="text-foreground/60 text-[18px] font-semibold tracking-tight">{initials}</span>
+      <GraduationCap className="text-foreground/60 h-6 w-6" />
     </span>
   );
 }
