@@ -1,7 +1,7 @@
 import { GraduationCap } from "lucide-react";
 
 const ENTRIES = [
-  { school: "Rīgas 3. arodskola", degree: "Programmēšanas tehniķis, 4. profesionālās kvalifikācijas līmenis", period: "2019 - 2021" },
+  { school: "Rīgas 3. arodskola", href: "https://www.rmpv.lv/", degree: "Programmēšanas tehniķis, 4. profesionālās kvalifikācijas līmenis", period: "2019 - 2021" },
   { school: "Līgatnes vidusskola", degree: "Vidējā izglītība", period: "2008 - 2019" },
 ];
 
@@ -13,23 +13,41 @@ export function Education() {
       <h3 className="text-foreground text-[15px] font-semibold tracking-tight">Izglītība</h3>
       <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative rounded-4xl border p-2 sm:p-4">
         <ul className="flex flex-col gap-2">
-          {ENTRIES.map((entry) => (
-            <li
-              key={`${entry.school}-${entry.period}`}
-              className="bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2"
-              style={{ minHeight: ROW_HEIGHT }}
-            >
-              <SchoolLogo />
-              <div className="flex min-w-0 flex-col">
-                <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.school}</span>
-                <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
-                  {entry.degree}
-                  <span className="text-foreground/30 mx-2">•</span>
-                  <span className="text-foreground/55">{entry.period}</span>
-                </span>
-              </div>
-            </li>
-          ))}
+          {ENTRIES.map((entry) => {
+            const rowClass = "bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2";
+            const content = (
+              <>
+                <SchoolLogo />
+                <div className="flex min-w-0 flex-col">
+                  <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">{entry.school}</span>
+                  <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
+                    {entry.degree}
+                    <span className="text-foreground/30 mx-2">•</span>
+                    <span className="text-foreground/55">{entry.period}</span>
+                  </span>
+                </div>
+              </>
+            );
+            return (
+              <li key={`${entry.school}-${entry.period}`}>
+                {entry.href ? (
+                  <a
+                    href={entry.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${rowClass} hover:border-foreground/20 transition-colors`}
+                    style={{ minHeight: ROW_HEIGHT }}
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div className={rowClass} style={{ minHeight: ROW_HEIGHT }}>
+                    {content}
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
