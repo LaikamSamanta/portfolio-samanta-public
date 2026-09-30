@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+import { Briefcase, ChevronDown } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -93,14 +93,13 @@ export function Experience() {
 }
 
 function CompanyLogo({ entry }) {
-  const initials = entry.company.charAt(0);
   return (
     <span
       className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center ring-1 dark:ring-white/10"
       aria-hidden="true"
       style={{ borderRadius: 14, backgroundColor: entry.brand }}
     >
-      <span className="text-[18px] font-semibold tracking-tight text-white">{initials}</span>
+      <Briefcase className="h-6 w-6 text-white" />
     </span>
   );
 }
