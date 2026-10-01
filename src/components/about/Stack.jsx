@@ -16,6 +16,7 @@ const CHIPS = [
   { label: "MySQL", slug: "mysql", bg: "#00758f", fg: "#ffffff" },
   { label: "Git", slug: "git", bg: "#f05032", fg: "#ffffff" },
   { label: "GitHub", slug: "github", bg: "#181717", fg: "#ffffff" },
+  { label: "Docker", slug: "docker", bg: "#2496ed", fg: "#ffffff" },
   { label: "Vercel", slug: "vercel", bg: "#000000", fg: "#ffffff" },
   { label: "Figma", slug: "figma", bg: "#1e1e1e", fg: "#ffffff" },
 ];
